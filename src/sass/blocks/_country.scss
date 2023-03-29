@@ -1,0 +1,26 @@
+.country{
+    height: 85px;
+    padding: 16px 0 16px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block{
+        display: flex;
+    }
+    &_descr{
+        margin-left: 10px;
+    }
+    &_header{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #242424;
+    }
+    &_text{
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+        color: #242424;
+    }
+}
