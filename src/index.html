@@ -40,7 +40,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="css/libs/_slick.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -87,10 +87,10 @@
             </div>
         </div>
     </section>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <div class="promo__header">
-                <div class="prpmo__logo">
+                <div class="promo__logo">
                     <img src="icons/logo.png" alt="logo">
                 </div>
                 <ul class="promo__menu">
@@ -98,10 +98,10 @@
                         <a href="#" class="promo__menu_link">Главная</a>
                     </li>
                     <li class="promo__menu_item">
-                        <a href="#" class="promo__menu_link">Модули</a>
+                        <a href="#skills" class="promo__menu_link">Модули</a>
                     </li>
                     <li class="promo__menu_item">
-                        <a href="#" class="promo__menu_link">Отрасли</a>
+                        <a href="#slider" class="promo__menu_link">Отрасли</a>
                     </li>
                     <li class="promo__menu_item">
                         <a href="#" class="promo__menu_link">О нас  </a>
@@ -115,18 +115,19 @@
                 <h1 class="promo__descr">Управляй своим бизнесом через Smartphone</h1> 
                <div class="promo__text"><span>PRENGI</span> - Платформа для прозрачного
                 управления бизнесом</div> 
-            <button class="btn promo_btn">Получить доступ</button> 
-            </div>
-            <div class="promo__phone_1">
-                <img src="img/header_1.png" alt="phone">
+            <button data-modal="consultation" class="btn promo_btn btn_submit">Получить доступ</button> 
             </div>
             <div class="promo__phone_2">
                 <img src="img/header_2.png" alt="phone">
             </div>
+            <div class="promo__phone_1">
+                <img src="img/header_1.png" alt="phone">
+            </div>
+           
             
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="skills__wrapper">
                 <div class="skills__item">
@@ -175,7 +176,26 @@
             </div>
         
     </section>
-    <section class="advantage">
+    <section class="slider" id="slider">
+        <div class="container">
+            <div class="title slider__title">Prengi предоставляет экспертные решения для Вашей отрасли</div>
+            <div class="slider__frame">
+                <img class="lll" src="img/slider/macbook.png" alt="#">
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <img class="slider__item_icon" src="img/slider/slider_1.png" alt="1">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__item_icon" src="img/slider/slider_2.png" alt="2">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__item_icon" src="img/slider/slider_3.jpg" alt="3">
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="advantage" id="advantage">
         <div class="container">
             <div class="title advantage__title">
                 Преимущества Prengi для Вашей отрасли
@@ -214,29 +234,106 @@
             </div>
         </div>
     </section>
-    <section class="variant">
-        <div class="title variant__title">Варианты развертывания
-            Ваших данных</div>
-        <div class="variant__item_1">
+    <section class="variant" id="variant">
+        <div class="title variant__title">Варианты развертывания Ваших данных</div>
+        
+            <div class="variant__item_1">
+              <div class="container_1">
                 <div class="variant__descr variant__descr-1">
                     <div class="variant__descr_header">Облачное хранилище</div>
                     <div class="variant__descr_text">Это выделенное пользователю пространство на жестком диске сервера, находящегося в Интернете.</div>
                 </div>   
         </div>
-        <div class="variant__item_2">
+        </div>
+        
+            <div class="variant__item_2">
+                <div class="container_1">
                 <div class="variant__descr variant__descr-2">
                     <div class="variant__descr_header">Размещение не сервере</div>
                     <div class="variant__descr_text">Услуга аренды пространства в центре обработки данных (колокация серверов) предназначена для клиентов</div>
                 </div>
-            </div>
+        </div>
+        </div>
 
     </section>
-    
-    
-    
-    
-    
+    <section class="consult" id="consult">
+        <div class="container">
+            <div >
+                <img class="consult__icon" src="icons/consilt.png" alt="">
+            </div>
+            <div class="title consult_title">Приступить очень просто!<br> Нужно получить доступ и начать работу!</div>
+            <button data-modal="consultation" class="btn consult_btn">связаться с нами;</button>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <div class="footer_descr">О компании</div>
+                    <div class="footer_icon">
+                        <img src="icons/footer_logo.png" alt="logo">
+                    </div>
+                    <div class="footer_text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</div>
+                </div>
+                <div class="footer__item_1">
+                    <div class="footer__item_block">
+                        <div class="footer_descr">Отрасли</div>
+                        <ul class="footer_menu">
+                            <li><a href="#" class="footer_text">Промышленность</a></li>
+                            <li><a href="#" class="footer_text">Ритейл</a></li>
+                            <li><a href="#" class="footer_text">Фасилити</a></li>
+                            <li><a href="#" class="footer_text">Логистика</a></li>
+                            <li><a href="#" class="footer_text">IT</a></li>
+                            <li><a href="#" class="footer_text">HR</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item_block">
+                        <div class="footer_descr">О нас</div>
+                        <ul class="footer_menu">
+                            <li><a href="#" class="footer_text">История</a></li>
+                            <li><a href="#" class="footer_text">Наши отношения</a></li>
+                            <li><a href="#" class="footer_text">Команда</a></li>
+                            <li><a href="#" class="footer_text">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__subdescr">© Prengi Ink. 2008-2017 Все права защищены.</div>
+        </div>
+    </section> 
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__clouse">&times;</div>
+            <div class="modal__title">Просто заполните форму заявки</div>
+            <div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-forms feed-forms_mt25" action="#">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required type="email" placeholder="Ваш Е-майл">
+                <button  class="btn btn_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__clouse">&times;</div>
+            <div class="modal__title">Спасибо за вашу заявку!</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="icon">
+    </a>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

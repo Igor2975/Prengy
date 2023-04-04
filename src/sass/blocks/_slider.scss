@@ -1,0 +1,47 @@
+.slider{
+    background: url('../img/slider_bg.png') center center/cover no-repeat;
+    padding: 80px 0 120px 0;position: relative;
+    &__title{
+        color: #ffffff;
+        width: 620px;
+        text-align: center;
+    }
+    &__wrapper{
+        padding-top: 120px;
+    }
+    &__item{
+        position: relative;
+       
+       &_icon{
+        margin:0 auto;
+        width: 695px;
+        height: 460px;
+        box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.34);
+       }
+    }
+    .slick-prev , .slick-next {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left:50px;
+        border: none;
+        outline: none;
+        background :rgba(0, 0, 0, 0);
+        
+        img{
+            width: 18px;
+            height: 59px;
+            
+        }
+    }
+    .slick-next{
+        position: absolute;
+        right:50px;
+        left:auto;
+    }
+    &__frame{
+        position: absolute;
+        top: 233px;
+        left: 243px;
+    }
+}

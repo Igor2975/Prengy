@@ -1,0 +1,16 @@
+.consult{
+    padding: 80px 0 80px 0;
+    &__icon{
+        margin: 0 auto;
+        display: block;
+    }
+    &_title{
+        padding-top: 74px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &_btn{
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -9,4 +9,11 @@
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
+    &:hover{
+        box-shadow:3px 3px 20px ;
+        transform: scale(1.2);
+    }
+    &_submit{
+        width: 300px;
+    }
 }

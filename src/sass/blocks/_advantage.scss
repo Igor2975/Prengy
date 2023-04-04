@@ -12,6 +12,10 @@
 
     }
     &__item{
+        &:hover{
+            transform: scale(1.05) ;
+            filter: saturate(300%);
+        }
         filter: brightness(81%);
         &_1{
             background: url('../img/advantage/adv_1.png') center center/cover no-repeat;    
